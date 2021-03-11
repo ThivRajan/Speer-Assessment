@@ -1,10 +1,10 @@
-import Menu from './components/menu/menu'
+import Menu from './components/menu/Menu'
 import './App.css'
 
 const App = () => {
 	return (
 		<div>
-			<Menu bg={'black'} fgOpen={'white'} fgClosed={'black'} highlight={'red'} />
+			<Menu bg={'#0B0B0B'} fgOpen={'white'} fgClosed={'#0B0B0B'} highlight={'#D34848'} />
 			<div>
 				<h1>Pricing</h1>
 				<p>
