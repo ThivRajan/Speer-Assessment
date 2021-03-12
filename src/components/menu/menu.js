@@ -13,7 +13,7 @@ const Menu = ({ bg, fgOpen, fgClosed, highlight }) => {
 		<MenuContainer isOpen={isOpen} bg={bg} fgOpen={fgOpen} fgClosed={fgClosed}
 			highlight={highlight}
 		>
-			<div class="menu-content">
+			<div className="menu-content">
 				<span className="menu-head">
 					<FontAwesomeIcon icon={faBars} onClick={() => setIsOpen(!isOpen)} />
 					<span>EXP|CON</span>
