@@ -65,43 +65,26 @@ const SlideContainer = styled.div`
 	}
 
 	.cta {
-		outline:0;
-		border-radius: 50px;
+		top: 675px;
+		left: 818px;
+		width: 284px;
+		height: 79px;
+		
+		background: transparent linear-gradient(90deg, #1FE1E9 0%, #5E33D1 34%, #D34848 65%, #FFB33F 100%) 0% 0% no-repeat padding-box;
+		border-radius: 79px;
 		border: none;
 		color: white;
-		font-size: 0.8em;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 400;
-		letter-spacing: 4px;
-		overflow: hidden;
-		position: relative; //absolute
-		padding: 2em 3em;
-		margin: 4em;
+		
+		font-size: 18px;
+		letter-spacing: 2px;
 		text-transform: uppercase;
-		-webkit-tap-highlight-color: transparent;
-		transition: all 500ms ease-in-out;
-		&::after, &::before { 
-			content: "";
-			position: absolute;
-		}
-		&:hover, &:focus {
-			background: rgba(255, 255, 255, 0.8);
+
+		:hover {
+			cursor: pointer;
 		}
 
-		&::before {
-			background: transparent;
-			border-radius: 100%;
-			top: 50%;
-			left: 50%;
-			box-shadow: 0 1em 2em 3em rgba(255, 50, 0, 0.5),
-						4em 0em 2em 2em rgba(155, 50, 0, 0.6),
-						-4em -2em 2em 2em rgba(255, 0, 150, 0.5),
-						-4em 2em 2em 4em rgba(0, 0, 150, 0.5),
-						0 -3em 2em 3em rgba(120, 250, 0, 0.5),
-						2em -1em 2em 2em rgba(50, 10, 200, 0.5);
-			width: 0;
-			height: 0;
-			animation: mix 5s linear infinite;
+		:active {
+			filter: brightness(95%);
 		}
 	}
 
