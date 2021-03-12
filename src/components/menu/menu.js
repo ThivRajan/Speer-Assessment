@@ -13,13 +13,14 @@ const Menu = ({ bg, fgOpen, fgClosed, highlight }) => {
 		<MenuContainer isOpen={isOpen} bg={bg} fgOpen={fgOpen} fgClosed={fgClosed}
 			highlight={highlight}
 		>
-			<div className='circle'></div>
-			<span className="menu-head">
-				<FontAwesomeIcon icon={faBars} onClick={() => setIsOpen(!isOpen)} />
-				<span>EXP|CON</span>
-			</span>
-			<div className="menu-body">
-				{menuItems.map(item => <div className='menu-item'>{item}</div>)}
+			<div class="menu-content">
+				<span className="menu-head">
+					<FontAwesomeIcon icon={faBars} onClick={() => setIsOpen(!isOpen)} />
+					<span>EXP|CON</span>
+				</span>
+				<div className="menu-body">
+					{menuItems.map(item => <div className='menu-item'>{item}</div>)}
+				</div>
 			</div>
 		</MenuContainer>
 	)
@@ -28,22 +29,22 @@ const Menu = ({ bg, fgOpen, fgClosed, highlight }) => {
 const MenuContainer = styled.div`
 	font-size: 20px;
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: -50px;
+	left: -50px;
+	border-radius: 50%;
+	background: ${props => props.bg};
+	transition: width 350ms ease-in, height 350ms ease-in;
 
-	.circle {
+	${props => props.isOpen ? 'width: 200px; height: 200px' : 'width: 0; height: 0'};
+
+	.menu-content {
 		position: absolute;
-		top: -50px;
-		left: -50px;
-		border-radius: 50%;
-		background: ${props => props.bg};
-		z-index: -1;
-		transition: width 350ms ease-in, height 350ms ease-in;
-
-		${props => props.isOpen ? 'width: 200px; height: 200px' : 'width: 0px; height: 0px'};
+		top: 70px;
+		left: 70px;
 	}
 
 	.menu-head {
+		display: flex;
 		transition: color 350ms;
 		color: ${props => props.isOpen ? props.highlight : props.fgClosed};
 	}
@@ -56,6 +57,7 @@ const MenuContainer = styled.div`
 		font-weight: 300;
 		text-transform: uppercase;
 		color: ${props => props.fgOpen};
+		visibility: ${props => props.isOpen ? 'visible' : 'hidden'};
 		opacity: ${props => props.isOpen ? '1' : '0'};
 		transition: opacity 500ms;
 	}
