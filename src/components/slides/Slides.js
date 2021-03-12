@@ -5,6 +5,7 @@ import img1 from '../../assets/img-1.png';
 import img2 from '../../assets/img-2.png';
 import img3 from '../../assets/img-3.png';
 
+//TODO: interval improperly cleared if navdot is clicked before 10s
 const Slides = () => {
 
 	const [activeSlide, setActiveSlide] = useState(0)
