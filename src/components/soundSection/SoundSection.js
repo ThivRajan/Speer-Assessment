@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './SoundSection.css'
 import Menu from '../menu/Menu'
 
@@ -21,7 +22,9 @@ const SoundSection = ({ setShowCursor }) => {
 			onMouseLeave={() => setShowCursor(false)}
 		>
 			<Menu bg={'#0B0B0B'} fgOpen={'white'} fgClosed={'white'} highlight={'#D34848'} />
-			<button className="demo-btn cta-btn">TRY IT NOW</button>
+			<Link to="/pricing">
+				<button className="demo-btn cta-btn">TRY IT NOW</button>
+			</Link>
 			<div className="text-container">
 				<h1 className="sound-title">SUPERIOR SOUND</h1>
 				<h2>Experience live versions of your favourite songs.</h2>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components';
 
 import slide1 from '../../assets/slide-1.png';
@@ -24,7 +25,9 @@ const Slides = () => {
 				like never before and from the comfort
 				of your own home.
 			</h2>
-			<button className="cta">Try It Now</button>
+			<Link to="/pricing">
+				<button className="cta">Try It Now</button>
+			</Link>
 			<div className="slider-nav">
 				{
 					slides.map((_slide, idx) =>

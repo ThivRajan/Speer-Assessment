@@ -1,4 +1,21 @@
+.pricing-container {
+	background: #191919;
+	padding: 100px;
+	padding-top: 210px;
+	color: white;
+}
+
 .pricing-title {
+	font-size: 40px;
+	letter-spacing: 3px;
+	color: white;
+}
+
+.pricing-subtitle {
 	font-size: 30px;
-	color: black;
+	letter-spacing: 3px;
+}
+
+.sub-container {
+	display: flex;
 }

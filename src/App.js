@@ -16,8 +16,7 @@ const App = () => {
 	return (
 		<>
 			<Switch>
-				<Route path="/pricing/payment">
-					<Pricing />
+				<Route path="/payment">
 					<PaymentView />
 				</Route>
 				<Route path="/pricing">
