@@ -23,7 +23,7 @@ const Section = ({ setShowCursor }) => {
 			<Menu bg={'#0B0B0B'} fgOpen={'white'} fgClosed={'white'} highlight={'#D34848'} />
 			<button className="demo-btn cta-btn">TRY IT NOW</button>
 			<div className="text-container">
-				<h1>SUPERIOR SOUND</h1>
+				<h1 className="sound-title">SUPERIOR SOUND</h1>
 				<h2>Experience live versions of your favourite songs.</h2>
 				<button className="demo-btn">SEE DEMO</button>
 			</div>

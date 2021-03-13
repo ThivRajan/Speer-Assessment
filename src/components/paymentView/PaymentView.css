@@ -3,14 +3,14 @@
 	padding-top: 210px;
 }
 
-h1 {
+.payment-title {
 	font-size: 30px;
 	letter-spacing: 2px;
 	color: black;
 	margin-bottom: 70px;
 }
 
-p {
+.pay-step {
 	font-size: 21px;
 	margin-bottom: 25px;
 	letter-spacing: 1.5px;

@@ -18,7 +18,7 @@ const Slides = () => {
 
 	return (
 		<SlideContainer img={slides[activeSlide]}>
-			<h1>Interactive Concert Experience</h1>
+			<h1 className="slide-title">Interactive Concert Experience</h1>
 			<h2>
 				Experience your favourite artists
 				like never before and from the comfort
@@ -53,7 +53,7 @@ const SlideContainer = styled.div`
 	text-align: center;
 	color: white;
 
-	h1 {
+	.slide-title {
 		text-transform: uppercase;
 		letter-spacing: 5px;
 		font-size: 50px;

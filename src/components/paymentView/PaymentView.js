@@ -14,8 +14,8 @@ const PaymentView = () => {
 	return (
 		<div className="payment-container">
 			<Menu bg={'#0B0B0B'} fgOpen={'white'} fgClosed={'black'} highlight={'#D34848'} />
-			<h1>PAYMENT</h1>
-			<p>1. Select your plan</p>
+			<h1 className="payment-title">PAYMENT</h1>
+			<p className="pay-step">1. Select your plan</p>
 			<div className="plan-options">
 				{
 					plans.map((plan, idx) =>
