@@ -1,0 +1,22 @@
+.payment-container {
+	padding: 100px;
+}
+
+h1 {
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: black;
+	margin-bottom: 80px;
+}
+
+p {
+	font-size: 18px;
+}
+
+.plan-options {
+	display: flex;
+}
+
+.form {
+	display: flex;
+}
