@@ -1,6 +1,6 @@
 .payment-container {
 	padding: 100px;
-	padding-top: 160px;
+	padding-top: 210px;
 }
 
 h1 {
@@ -58,6 +58,11 @@ p {
 .terms p {
 	font-size: 13px;
 	line-height: 17px;
+}
+
+.highlight {
+	color: #2F1FE9;
+	font-weight: bold;
 }
 
 .cta {

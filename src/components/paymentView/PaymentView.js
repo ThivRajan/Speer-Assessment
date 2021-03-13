@@ -49,8 +49,9 @@ const PaymentView = () => {
 			</div>
 			<div className="terms">
 				<p>
-					By continuing, I acknowledge that I've read and agree
-					to the <span>Terms of Service &amp; Privacy Policy</span>.
+					By continuing, I acknowledge that I've read and agree to the
+					<span className="highlight"> Terms of Service </span> &amp;
+					<span className="highlight"> Privacy Policy</span>.
 				</p>
 				<button className="cta">Download</button>
 			</div>
