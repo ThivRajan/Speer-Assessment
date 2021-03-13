@@ -1,0 +1,33 @@
+footer {
+	display: flex;
+	flex-direction: column;
+	padding: 90px 80px 50px 80px;
+	background: #5E33D1;
+	color: white;
+}
+
+.contact {
+	text-align: left;
+	margin-bottom: 60px;
+	letter-spacing: 2px;
+}
+
+.mail-icon {
+	margin-right: 10px;
+}
+
+.brand {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.brand-name {
+	font-size: 25px;
+	letter-spacing: 3px;
+	margin-bottom: 30px;
+}
+
+.copyright {
+	letter-spacing: 1.5px;
+}
