@@ -6,8 +6,7 @@ import slide1 from '../../assets/slide-1.png';
 import slide2 from '../../assets/slide-2.png';
 import slide3 from '../../assets/slide-3.png';
 
-//TODO: interval improperly cleared if navdot is clicked before 10s
-//TODO: fix sizing on zoom
+// Slide interval isn't cleared properly but didn't have time to fix it
 const Slides = () => {
 
 	const [activeSlide, setActiveSlide] = useState(0)
@@ -20,7 +19,7 @@ const Slides = () => {
 	return (
 		<SlideContainer img={slides[activeSlide]}>
 			<h1 className="slide-title">Interactive Concert Experience</h1>
-			<h2>
+			<h2 className="slide-subtitle">
 				Experience your favourite artists
 				like never before and from the comfort
 				of your own home.
@@ -42,6 +41,7 @@ const Slides = () => {
 	)
 }
 
+// used styled components because of the background img prop
 const SlideContainer = styled.div`
 	background-image: url(${props => props.img}); 
 	background-position: center;
@@ -62,8 +62,9 @@ const SlideContainer = styled.div`
 		font-size: 50px;
 	}
 
-	h2 {
+	.slide-subtitle {
 		max-width: 60vw;
+		width: 1000px;
 		font-size: 30px;
 		font-weight: 200;
 		letter-spacing: 1px;
