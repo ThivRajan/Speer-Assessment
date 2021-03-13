@@ -1,9 +1,11 @@
 import { useState } from 'react'
+import { Switch, Route } from 'react-router-dom'
 import './App.css'
 
 import Landing from './components/landing/Landing'
 import CustomCursor from './components/customCursor/CustomCursor'
 import PaymentView from './components/paymentView/PaymentView'
+import Footer from './components/footer/Footer'
 
 const App = () => {
 	// there were issues with putting the CustomCursor in the sound section 
@@ -12,9 +14,16 @@ const App = () => {
 
 	return (
 		<>
-			{/* <CustomCursor showCursor={showCursor} />
-			<Landing setShowCursor={setShowCursor} /> */}
-			<PaymentView />
+			<Switch>
+				<Route path="/payment">
+					<PaymentView />
+				</Route>
+				<Route path="/">
+					<CustomCursor showCursor={showCursor} />
+					<Landing setShowCursor={setShowCursor} />
+				</Route>
+			</Switch>
+			<Footer />
 		</>
 	);
 }
