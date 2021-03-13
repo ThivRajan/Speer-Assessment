@@ -1,0 +1,88 @@
+.section {
+	background: #D34848 0% 0% no-repeat padding-box;
+	opacity: 1;
+
+	display: flex;
+
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 3vw;
+
+	position: relative;
+	cursor: none;
+}
+
+.section:hover .cursor {
+	opacity: 1;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 30px;
+
+}
+
+.img-container {
+	display: flex;
+}
+
+h1 {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 4vw;
+	margin: 0;
+}
+
+h2 {
+	max-width: 60vw;
+	font-size: 3vw;
+	font-weight: 200;
+	letter-spacing: 1px;
+	width: 500px;
+}
+
+.demo-btn {
+	width: 338px;
+	height: 81px;
+	/* UI Properties */
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: none;
+	border-radius: 79px;
+	opacity: 1;
+
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #D34848;
+	cursor: none;
+}
+
+.demo-btn:active {
+	filter: brightness(95%);
+}
+
+.cta-btn {
+	position: absolute;
+	top: 50px;
+	right: 60px;
+
+	width: 250px;
+	height: 60px;
+	font-size: 20px;
+}
+
+
+img {
+	width: 20vw;
+}
+
+.speaker1 {
+	margin-top: 200px;
+}
+
+.speaker2 {
+	margin-top: 400px;
+}

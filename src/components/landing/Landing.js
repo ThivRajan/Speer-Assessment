@@ -1,13 +1,15 @@
 import Menu from '../menu/Menu'
 import Slides from '../slides/Slides'
-import Section from '../section/Section'
+import SoundSection from '../soundSection/SoundSection'
 
-const Landing = () => {
+// CustomCursor toggle method had to be passed through here
+// because I wasn't able to keep it contained in the Sound Section
+const Landing = ({ setShowCursor }) => {
 	return (
 		<div>
 			<Menu bg={'#0B0B0B'} fgOpen={'white'} fgClosed={'white'} highlight={'#D34848'} />
 			<Slides />
-			<Section />
+			<SoundSection setShowCursor={setShowCursor} />
 		</div>
 	);
 }

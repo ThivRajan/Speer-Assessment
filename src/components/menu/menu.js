@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Menu = ({ bg, fgOpen, fgClosed, highlight }) => {
-
 	const [isOpen, setIsOpen] = useState(false)
 	const menuItems = ['what is it', 'perks', 'pricing']
 
@@ -26,8 +25,9 @@ const Menu = ({ bg, fgOpen, fgClosed, highlight }) => {
 	)
 }
 
+// used styled components here because of many conditional styles
 const MenuContainer = styled.div`
-	font-size: 20px;
+	font-size: 25px;
 	position: absolute;
 	top: -50px;
 	left: -50px;
@@ -35,12 +35,12 @@ const MenuContainer = styled.div`
 	background: ${props => props.bg};
 	transition: width 350ms ease-in, height 350ms ease-in;
 
-	${props => props.isOpen ? 'width: 200px; height: 200px' : 'width: 0; height: 0'};
+	${props => props.isOpen ? 'width: 275px; height: 275px' : 'width: 0; height: 0'};
 
 	.menu-content {
 		position: absolute;
-		top: 70px;
-		left: 70px;
+		top: 100px;
+		left: 100px;
 	}
 
 	.menu-head {

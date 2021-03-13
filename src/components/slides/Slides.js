@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react'
 import styled from 'styled-components';
 
-import img1 from '../../assets/img-1.png';
-import img2 from '../../assets/img-2.png';
-import img3 from '../../assets/img-3.png';
+import slide1 from '../../assets/slide-1.png';
+import slide2 from '../../assets/slide-2.png';
+import slide3 from '../../assets/slide-3.png';
 
 //TODO: interval improperly cleared if navdot is clicked before 10s
 //TODO: fix sizing on zoom
 const Slides = () => {
 
 	const [activeSlide, setActiveSlide] = useState(0)
-	const slides = [img1, img2, img3]
+	const slides = [slide1, slide2, slide3]
 
 	useEffect(() => {
 		setTimeout(() => setActiveSlide((activeSlide + 1) % 3), 10000)
