@@ -4,6 +4,7 @@ import './App.css'
 
 import Landing from './components/landing/Landing'
 import CustomCursor from './components/customCursor/CustomCursor'
+import Pricing from './components/pricingView/PricingView'
 import PaymentView from './components/paymentView/PaymentView'
 import Footer from './components/footer/Footer'
 
@@ -15,8 +16,12 @@ const App = () => {
 	return (
 		<>
 			<Switch>
-				<Route path="/payment">
+				<Route path="/pricing/payment">
+					<Pricing />
 					<PaymentView />
+				</Route>
+				<Route path="/pricing">
+					<Pricing />
 				</Route>
 				<Route path="/">
 					<CustomCursor showCursor={showCursor} />

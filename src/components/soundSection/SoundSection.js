@@ -1,4 +1,4 @@
-import './Section.css'
+import './SoundSection.css'
 import Menu from '../menu/Menu'
 
 import speaker1 from '../../assets/speaker-1.png';
@@ -8,7 +8,7 @@ import elevatorMusic from '../../assets/elevator-music.mp3'
 const music = new Audio(elevatorMusic)
 music.loop = true
 
-const Section = ({ setShowCursor }) => {
+const SoundSection = ({ setShowCursor }) => {
 
 	const toggleMusic = () => {
 		if (music.paused) music.play()
@@ -50,4 +50,4 @@ const Section = ({ setShowCursor }) => {
 }
 
 
-export default Section;
+export default SoundSection;
