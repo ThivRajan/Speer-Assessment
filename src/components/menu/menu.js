@@ -25,12 +25,12 @@ const Menu = ({ bg, fgOpen, fgClosed, highlight }) => {
 	)
 }
 
-// used styled components here because of many conditional styles
+// using styled components here because of many conditional styles
 const MenuContainer = styled.div`
 	font-size: 25px;
 	position: absolute;
-	top: -50px;
-	left: -50px;
+	top: -70px;
+	left: -40px;
 	border-radius: 50%;
 	background: ${props => props.bg};
 	transition: width 350ms ease-in, height 350ms ease-in;
@@ -39,7 +39,7 @@ const MenuContainer = styled.div`
 
 	.menu-content {
 		position: absolute;
-		top: 100px;
+		top: 120px;
 		left: 100px;
 	}
 
