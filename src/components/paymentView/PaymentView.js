@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-
 import './PaymentView.css'
+
+import Menu from '../menu/Menu'
+import Form from '../form/Form'
 
 const PaymentView = () => {
 
@@ -11,6 +13,7 @@ const PaymentView = () => {
 
 	return (
 		<div className="payment-container">
+			<Menu bg={'#0B0B0B'} fgOpen={'white'} fgClosed={'black'} highlight={'#D34848'} />
 			<h1>PAYMENT</h1>
 			<p>1. Select your plan</p>
 			<div className="plan-options">
@@ -26,16 +29,31 @@ const PaymentView = () => {
 					)
 				}
 			</div>
-			<div className="form">
+			<div className="forms-container">
 				<div className="bill-info">
 					<p>2. Billing Information</p>
+					<Form
+						className="billing-form"
+						mainFields={['Full Name', 'Billing Address', 'Country']}
+						subFields={['City', 'Postal Code']}
+					/>
 				</div>
 				<div className="card-info">
 					<p>3. Credit Card Information</p>
+					<Form
+						className="card-form"
+						mainFields={['Cardholder\'s Name', 'Card Number', 'CVV']}
+						subFields={['Expiry Month', 'Expiry Year']}
+					/>
 				</div>
-
 			</div>
-
+			<div className="terms">
+				<p>
+					By continuing, I acknowledge that I've read and agree
+					to the <span>Terms of Service &amp; Privacy Policy</span>.
+				</p>
+				<button className="cta">Download</button>
+			</div>
 		</div>
 	)
 }

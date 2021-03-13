@@ -1,8 +1,9 @@
 import { useState } from 'react'
-
 import './App.css'
+
 import Landing from './components/landing/Landing'
 import CustomCursor from './components/customCursor/CustomCursor'
+import PaymentView from './components/paymentView/PaymentView'
 
 const App = () => {
 	// there were issues with putting the CustomCursor in the sound section 
@@ -11,8 +12,9 @@ const App = () => {
 
 	return (
 		<>
-			<CustomCursor showCursor={showCursor} />
-			<Landing setShowCursor={setShowCursor} />
+			{/* <CustomCursor showCursor={showCursor} />
+			<Landing setShowCursor={setShowCursor} /> */}
+			<PaymentView />
 		</>
 	);
 }

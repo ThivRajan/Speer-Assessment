@@ -1,22 +1,80 @@
 .payment-container {
 	padding: 100px;
+	padding-top: 160px;
 }
 
 h1 {
 	font-size: 30px;
 	letter-spacing: 2px;
 	color: black;
-	margin-bottom: 80px;
+	margin-bottom: 70px;
 }
 
 p {
-	font-size: 18px;
+	font-size: 21px;
+	margin-bottom: 25px;
+	letter-spacing: 1.5px;
 }
 
 .plan-options {
 	display: flex;
+	margin-bottom: 40px;
 }
 
-.form {
+.forms-container {
 	display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+	.forms-container {
+		flex-direction: column;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.card-info p {
+		padding-left: 20px;
+	}
+}
+
+.bill-info {
+	margin-right: 50px;
+}
+
+.bill-info,
+.card-info {
+	width: 400px;
+}
+
+.billing-form {
+	padding-left: 30px;
+}
+
+.terms {
+	padding-left: 20px;
+	width: 375px;
+}
+
+.terms p {
+	font-size: 13px;
+	line-height: 17px;
+}
+
+.cta {
+	width: 143px;
+	height: 40px;
+
+	background: transparent linear-gradient(90deg, #1FE1E9 0%, #5E33D1 34%, #D34848 65%, #FFB33F 100%) 0% 0% no-repeat padding-box;
+	border-radius: 79px;
+	border: none;
+	color: white;
+
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.cta:active {
+	filter: brightness(95%);
 }
